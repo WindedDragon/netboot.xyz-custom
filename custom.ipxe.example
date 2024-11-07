@@ -29,8 +29,9 @@ initrd https://iso.cachyos.org/desktop/240714/cachyos-desktop-linux-240714.iso
 boot || goto custom_exit
 
 :option_three
-echo Chains into another menu...
-chain https://raw.githubusercontent.com/${github_user}/netboot.xyz-custom/master/custom1.ipxe || goto custom
+kernel https://boot.netboot.xyz/memdisk raw iso
+initrd https://download.sys.truenas.net/TrueNAS-SCALE-ElectricEel/24.10.0/TrueNAS-SCALE-24.10.0.iso
+boot || goto custom_exit
 
 :custom_exit
 chain utils.ipxe
