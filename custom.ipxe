@@ -26,7 +26,7 @@ boot || goto custom_exit
 
 :option_two
 kernel https://boot.netboot.xyz/memdisk raw iso
-initrd https://iso.cachyos.org/desktop/240714/cachyos-desktop-linux-240714.iso
+initrd https://cdn77.cachyos.org/ISO/desktop/250828/cachyos-desktop-linux-250828.iso
 boot || goto custom_exit
 
 :option_three
